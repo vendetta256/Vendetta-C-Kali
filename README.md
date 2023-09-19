@@ -39,7 +39,7 @@ Pastikan versi Kali Linux Anda sesuai dengan informasi di atas untuk memastikan 
 
 ## Lisensi
 
-Script ini dilisensikan di bawah lisensi MIT. Silakan merujuk ke file LICENSE untuk informasi lebih lanjut.
+Script ini di distribusikan oleh Komunitas White Hacker seluruh indonesia dan dilisensikan di bawah lisensi MIT. Silakan merujuk ke file LICENSE untuk informasi lebih lanjut.
 
 ---
 </br>
