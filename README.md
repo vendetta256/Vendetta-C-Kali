@@ -30,10 +30,10 @@ Pastikan untuk menjalankan script ini dengan hak akses superuser (sudo) agar dap
 
 Script ini telah diuji coba pada versi Kali Linux dengan informasi sebagai berikut:
 
-Distributor ID: Kali
-Description: Kali GNU/Linux Rolling
-Release: 2023.3
-Codename: kali-rolling
+- Distributor ID: Kali
+- Description: Kali GNU/Linux Rolling
+- Release: 2023.3
+- Codename: kali-rolling
 
 Pastikan versi Kali Linux Anda sesuai dengan informasi di atas untuk memastikan script ini dapat berjalan dengan baik.
 
