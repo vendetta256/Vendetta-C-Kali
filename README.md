@@ -1,7 +1,7 @@
-<p>
+<div>
   <img src="https://camo.githubusercontent.com/3c0b054a8de90e002d439d60011f23cfbbcb2f385723bbc76cf371a9628e236c/68747470733a2f2f7777772e706e676d6172742e636f6d2f66696c65732f342f562d466f722d56656e64657474612d5472616e73706172656e742d4261636b67726f756e642e706e67" alt="Vendetta-C-Kali logo" width="200" align="left">
   <h1>Vendetta-C-Kali</h1>
-</p>
+</div>
 
 Vendetta-C-Kali adalah tools untuk membersihkan file sampah sementara dan seluruh file sampah di semua direktori pada sistem operasi Kali Linux. Tools ini juga dapat memperbaiki file history jika terdapat pesan "zsh: corrupt history file".
 
