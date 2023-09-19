@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 
 import os
+import signal
 
 # Tampilkan versi Kali Linux secara detail
-print("=== Vendetta-C-Kali ===")
+print("=== Vendetta-C-Kali V1 ===")
 os.system("lsb_release -a")
 print("======================")
 
 # Periksa apakah ada pesan "zsh: corrupt history file"
-if os.path.exists(os.path.expanduser("~/.zsh_history")):
-    with open(os.path.expanduser("~/.zsh_history"), "r") as f:
+zsh_history_path = os.path.expanduser("~/.zsh_history")
+if os.path.exists(zsh_history_path):
+    with open(zsh_history_path, "r") as f:
         if "zsh: corrupt history file" in f.read():
             print("Mengatasi masalah zsh: corrupt history file...")
-            os.system("mv ~/.zsh_history ~/.zsh_history_bad && strings ~/.zsh_history_bad > ~/.zsh_history")
+            os.system(f"mv {zsh_history_path} {zsh_history_path}_bad && strings {zsh_history_path}_bad > {zsh_history_path}")
             print("File history telah diperbaiki.")
 
 # Pilihan penghapusan file sampah
