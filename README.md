@@ -17,8 +17,9 @@ Vendetta-C-Kali adalah tools untuk membersihkan file sampah sementara dan seluru
 ## Cara Penggunaan
 
 1. Download script dari [repository GitHub ini](https://github.com/vendetta256/Vendetta-C-Kali.git).
-2. Buka terminal dan masuk ke direktori tempat script disimpan.
-3. Jalankan script dengan perintah `sudo python3 vendetta-c-kali.py`.
+2. Buka terminal dan masuk ke direktori tempat script disimpan `cd Vendetta-C-Kali`.
+3. Berikan izin dengan peritah `chmod +x Vendetta-C-Kali-V2.py`
+3. Jalankan script dengan perintah `python3 Vendetta-C-Kali-V2.py`.
 4. Pilih opsi penghapusan file sampah yang diinginkan.
 5. Tunggu hingga proses penghapusan selesai.
 6. Script akan menampilkan total file sampah yang dihapus.
@@ -27,19 +28,28 @@ Vendetta-C-Kali adalah tools untuk membersihkan file sampah sementara dan seluru
 ## Dependensi
 
 - Python 3
+- locate
 
 Anda dapat menginstal Python 3 dengan perintah `sudo apt-get install python3`.
+Anda dapat menginstall locate dengan perintah `sudo apt-get install mlocate'`.
 
 ## Catatan
 
 Pastikan untuk menjalankan script ini dengan hak akses superuser (sudo) agar dapat menghapus file sampah di seluruh lokasi pada sistem operasi Anda.
 
-Script ini telah diuji coba pada versi Kali Linux dengan informasi sebagai berikut:
+Script ini telah diuji coba pada Sistem Operasi Linux dengan informasi sebagai berikut:
 
-- Distributor ID: Kali
-- Description: Kali GNU/Linux Rolling
-- Release: 2023.3
-- Codename: kali-rolling
+
+> - Distributor ID : Kali
+> - Description    : Kali GNU/Linux Rolling
+> - Release        : 2023.3
+> - Codename       : kali-rolling
+
+> - Distributor ID : Ubuntu
+> - Description    :    Ubuntu 20.04.6 LTS
+> - Release        :        20.04
+> - Codename       :       focal
+
 
 Pastikan versi Kali Linux Anda sesuai dengan informasi di atas untuk memastikan script ini dapat berjalan dengan baik.
 
