@@ -8,6 +8,12 @@ Vendetta-C-Kali adalah tools untuk membersihkan file sampah sementara dan seluru
 ## =W=H=I=T=E==H=A=C=K=E=R=
 ## =W=H=I=T=E==H=A=C=K=E=R=
 
+## Update Fitur Terbaru :
+   - Penyesuaian fitur sekarang tidak lagi membersihkan secara offline tapi sudah menggunakan pembersihan secara online. Yaitu dengan memanggil source kode induk dari github untuk melakukan tugasnya di Kali Linux.
+
+`Catatan:`
+`Pastikan memliki koneksi internet dalam melakukan pembersihan. menjalankan aplikasi tanpa koneksi internet, tidak akan berproses sebagaimana mestinya`
+
 ## Cara Penggunaan
 
 1. Download script dari [repository GitHub ini](https://github.com/vendetta256/Vendetta-C-Kali.git).
