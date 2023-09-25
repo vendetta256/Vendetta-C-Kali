@@ -4,7 +4,7 @@ import os
 import signal
 
 # Tampilkan versi Kali Linux secara detail
-print("=== Vendetta-C-Kali V1 ===")
+print("=== Vendetta-C-Kali V2 ===")
 os.system("lsb_release -a")
 print("======================")
 
@@ -62,4 +62,7 @@ def exit_program(signal, frame):
 signal.signal(signal.SIGINT, exit_program)
 print("Tekan Ctrl+C untuk keluar.")
 while True:
-    pass
+    try:
+        pass
+    except KeyboardInterrupt:
+        exit_program(None, None)
