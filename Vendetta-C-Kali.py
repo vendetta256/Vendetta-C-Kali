@@ -50,6 +50,17 @@ elif choice == "2":
 else:
     print("Pilihan tidak valid.")
 
+# Menonaktifkan semua layanan umum yang tidak digunakan selama seminggu terakhir
+print("Menonaktifkan semua layanan umum yang tidak digunakan selama seminggu terakhir...")
+services = os.popen("systemctl list-unit-files --state=enabled --no-pager --no-legend | awk '{print $1}'").read().splitlines()
+last_used = int(os.popen("date +%s --date='1 week ago'").read().strip())
+for service in services:
+    if os.popen(f"systemctl is-active --quiet {service} && journalctl --unit {service} --since '{last_used}' | grep -c 'Active:'").read().strip() == "0":
+        print(f"Menonaktifkan layanan {service}...")
+        os.system(f"systemctl stop {service}")
+        os.system(f"systemctl disable {service}")
+print("Semua layanan umum yang tidak digunakan selama seminggu terakhir telah dinonaktifkan.")
+
 # Tampilkan total file sampah yang dihapus
 print("Total file sampah yang dihapus:")
 os.system("sudo locate '*~' | wc -l")
