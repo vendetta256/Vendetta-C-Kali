@@ -11,11 +11,14 @@ print("======================")
 # Periksa apakah ada pesan "zsh: corrupt history file"
 zsh_history_path = os.path.expanduser("~/.zsh_history")
 if os.path.exists(zsh_history_path):
-    with open(zsh_history_path, "r") as f:
-        if "zsh: corrupt history file" in f.read():
-            print("Mengatasi masalah zsh: corrupt history file...")
-            os.system(f"mv {zsh_history_path} {zsh_history_path}_bad && strings {zsh_history_path}_bad > {zsh_history_path}")
-            print("File history telah diperbaiki.")
+    with open(zsh_history_path, "r", encoding="ISO-8859-1") as f:
+        try:
+            if "zsh: corrupt history file" in f.read():
+                print("Mengatasi masalah zsh: corrupt history file...")
+                os.system(f"mv {zsh_history_path} {zsh_history_path}_bad && strings {zsh_history_path}_bad > {zsh_history_path}")
+                print("File history telah diperbaiki.")
+        except UnicodeDecodeError:
+            print("Tidak dapat membaca file history. Pastikan file menggunakan encoding yang benar.")
 
 # Pilihan penghapusan file sampah
 print("Pilihan penghapusan file sampah:")
